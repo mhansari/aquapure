@@ -16,7 +16,7 @@
 
                     {!! Form::open(['url' => 'supplier/save-filling']) !!}
                     <div class="form-group">
-                        <label for="supplier">Supplier</label>
+="                        <label forsupplier">Supplier</label>
                         {!! Form::select('supplier',$suppliers ,$id, array(($id>0?'disabled':'')=>($id>0?'disabled':''),'id' => 'supplier', 'class'=>'form-control','required'=>'required')) !!}
                         <label for="date">Date</label>
                         {!! Form::text('datepicker', date('m/d/Y'), array('id' => 'datepicker', 'class'=>'form-control date_picker_custom','required'=>'required')) !!}

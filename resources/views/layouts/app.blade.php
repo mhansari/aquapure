@@ -15,12 +15,13 @@
      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
           <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+@yield('styles')
 </head>
 <body>
     <div id="app">
@@ -84,16 +85,6 @@
     </div>
 
    
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker({
-      changeMonth: true,
-      changeYear: true
-    });
-  });
 
-
-
-  </script>
 </body>
 </html>
